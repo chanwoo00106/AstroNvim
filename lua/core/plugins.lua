@@ -1,4 +1,6 @@
 local astro_plugins = {
+  ["MunifTanjim/prettier.nvim"] = {},
+
   -- Plugin manager
   ["wbthomason/packer.nvim"] = {},
 
