@@ -95,7 +95,7 @@ end
 
 -- NeoTree
 if is_available "neo-tree.nvim" then
-  map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Explorer" })
+  map("n", "<C-t>", "<cmd>Neotree toggle<cr>", { desc = "Toggle Explorer" })
   map("n", "<leader>o", "<cmd>Neotree focus<cr>", { desc = "Focus Explorer" })
 end
 
