@@ -1,5 +1,6 @@
 local cmp_status_ok, cmp = pcall(require, "cmp")
 local snip_status_ok, luasnip = pcall(require, "luasnip")
+
 if cmp_status_ok and snip_status_ok then
   local setup = cmp.setup
   local kind_icons = {
@@ -80,7 +81,7 @@ if cmp_status_ok and snip_status_ok then
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
       },
-      ["<CR>"] = cmp.mapping.confirm { select = false },
+      ["<CR>"] = cmp.mapping.confirm { select = true },
       ["<Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_next_item()

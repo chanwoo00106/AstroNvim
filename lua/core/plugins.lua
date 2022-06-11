@@ -1,4 +1,13 @@
 local astro_plugins = {
+  -- styled-components
+  ["styled-components/vim-styled-components"] = {
+    branch = "main"
+  },
+  
+  -- gitgutter
+  ["airblade/vim-gitgutter"] = {},
+
+  -- prettier
   ["MunifTanjim/prettier.nvim"] = {},
 
   -- Plugin manager

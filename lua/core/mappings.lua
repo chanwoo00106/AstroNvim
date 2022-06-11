@@ -18,6 +18,7 @@ end, { desc = "Open the file under cursor with system app" })
 map("n", "<C-s>", "<cmd>w!<cr>", { desc = "Force write" })
 map("n", "<C-q>", "<cmd>q!<cr>", { desc = "Force quit" })
 map("n", "Q", "<Nop>")
+map("n", "<C-a>", "gg<S-v>G")
 
 -- Packer
 map("n", "<leader>pc", "<cmd>PackerCompile<cr>", { desc = "Packer Compile" })
