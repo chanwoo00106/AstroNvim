@@ -136,6 +136,10 @@ if is_available "smart-splits.nvim" then
     require("smart-splits").move_cursor_right()
   end, { desc = "Move to right split" })
 
+  -- 화면 분할
+  map("n", "sv", ":vsplit<CR><C-l>")
+  map("n", "ss", ":split<CR><C-h>")
+
   -- Resize with arrows
   map("n", "<C-Up>", function()
     require("smart-splits").resize_up()
