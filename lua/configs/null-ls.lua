@@ -4,6 +4,7 @@ local pre_status_ok, prettier = pcall(require, "prettier")
 if status_ok and pre_status_ok then
   null_ls.setup({
     on_attach = function(client, bufnr)
+      print(client)
       if client.resolved_capabilities.document_formatting then
         vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.formatting()<CR>")
         -- format on save

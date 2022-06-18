@@ -2,11 +2,6 @@ local astro_plugins = {
   -- discord
   ["andweeb/presence.nvim"] = {},
 
-  -- styled-components
-  ["styled-components/vim-styled-components"] = {
-    branch = "main"
-  },
-  
   -- gitgutter
   ["airblade/vim-gitgutter"] = {},
 
