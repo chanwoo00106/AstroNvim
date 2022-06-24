@@ -276,3 +276,10 @@ map("t", "<C-l>", "<c-\\><c-n><c-w>l", { desc = "Terminal right window naviation
 
 -- back
 map("n", "<C-z>", ":undo<cr>")
+map("i", "<C-z>", "<ESC>ui")
+map("v", "<C-z>", "<ESC>u")
+
+-- redo
+map("n", "<C-r>", ":undo<cr>")
+map("i", "<C-r>", "<ESC>ui")
+map("v", "<C-r>", "<ESC>u")
