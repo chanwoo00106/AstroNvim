@@ -280,6 +280,9 @@ map("i", "<C-z>", "<ESC>ui")
 map("v", "<C-z>", "<ESC>u")
 
 -- redo
-map("n", "<C-r>", ":undo<cr>")
-map("i", "<C-r>", "<ESC>ui")
-map("v", "<C-r>", "<ESC>u")
+map("n", "<C-r>", ":redo<cr>")
+map("i", "<C-r>", "<ESC>:redo<CR>i")
+map("v", "<C-r>", "<ESC>:redo<CR>")
+
+-- copy
+map("v", "<C-c>", "y")
