@@ -286,3 +286,9 @@ map("v", "<C-r>", "<ESC>:redo<CR>")
 
 -- copy
 map("v", "<C-c>", "y")
+
+-- save
+map("i", "<C-s>", "<ESC>:w<CR>a")
+
+-- shift enter
+map("i", "<S-Enter>", "<ESC>o")

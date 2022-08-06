@@ -1,4 +1,7 @@
 local astro_plugins = {
+  -- git
+  ["tpope/vim-fugitive"] = {},
+
   -- discord
   ["andweeb/presence.nvim"] = {},
 
